@@ -1,0 +1,352 @@
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+    /* width: 100%; */
+}
+
+body {
+    font-family: "helvetica", "arial", "sans-serif"
+}
+
+a {
+    /* margin: 0 5px; */
+    text-decoration: none;
+    pointer-events: auto;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button {
+    font-family: inherit;
+    background: none;
+    border: none;
+    padding: 0 15px 5px;
+    height: 1.2em;
+    border-radius: 15px;
+    pointer-events: auto;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+small {
+    font-size: 0.8em;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.margin-top {
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/*HEADER AND NAVBAR*/
+
+header {
+    padding: 10px 20px;
+    margin-bottom: 0;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+h1 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+h2 {
+    display: block;
+    font-size: 1.75em;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+h3 {
+    font-size: 1em;
+    margin: 10px 0 3px;
+    font-weight: bolder;
+    padding: 3px;
+}
+
+.heading {
+    margin: 20px 0;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+#logo {
+    margin-right: 20px;
+    text-align: left;
+}
+
+#menu {
+    margin-top: 0;
+    list-style-type: none;
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#menu li {
+    position: relative;
+    display: inline-block;
+    /* float: left; */
+    /* margin: 5px 10px; */
+    padding: 15px;
+    padding-bottom: 15px;
+}
+
+.menu-btn {
+    position: relative;
+    font-size: 1em;
+    border-radius: 0;
+    border: none;
+    z-index: 100;
+}
+
+.menu-btn-highlight {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.menu-toggle {
+    float: right;
+    font-family: inherit;
+    font-size: 1em;
+    height: 100%;
+    /* line-height: 1em; */
+    margin-bottom: 10px;
+}
+
+nav div {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-contact {
+    display: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/*MAIN*/
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.description {
+    background: pink;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 80%;
+    min-height: 400px;
+    width: 50%;
+}
+
+.description img {
+    width: 100%;
+    height: auto;
+}
+
+.description-header {
+    width: 100%;
+    height: 25%;
+    overflow: hidden;
+}
+
+.project {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.project:hover .description, .project:focus .description {
+    background: pink;
+}
+.thumb-title{
+    
+}
+.macro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* height: 600px; */
+    /* border: 1px solid plum; */
+    margin-top: 30px;
+}
+
+.macro-header {
+    width: 100%;
+}
+
+.macro-body {
+    position: relative;
+    /* justify-content: center; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+}
+
+.specs {
+    height: 100%;
+    width: 33%;
+    padding-right: 30px;
+    /* border: 1px solid aqua; */
+}
+
+.summary {
+    height: 100%;
+    width: 66%;
+    /* border: 1px solid green; */
+}
+
+.subtitle {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+.tech-tags {
+    margin-bottom: 25px;
+}
+.tech-tags img{
+    height: 30px;
+    width: auto;
+    margin: 3px;
+}
+
+/*For screens smaller than 980*/
+
+@media screen and (max-width: 980px) {
+    .container, .header {
+        width: 100%;
+    }
+    .content {
+        width: 70%;
+    }
+    .project {
+        width: 45%;
+    }
+}
+
+/*For screens smaller than 768*/
+
+@media screen and (max-width: 768px) {
+    .container, .header {
+        width: 100%;
+    }
+    .content {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+    .project {
+        width: 45%;
+    }
+}
+
+/*For screens smaller than 640px*/
+
+@media screen and (max-width: 640px) {
+    header {
+        height: 50px;
+        display: block;
+    }
+    #menu {
+        padding: 0;
+    }
+    #menu span, #menu, #menu li, nav div {
+        width: 100%;
+    }
+    .menu-toggle, nav div, #menu li {
+        display: block;
+    }
+    .menu-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    #menu li {
+        padding: 25px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+}
