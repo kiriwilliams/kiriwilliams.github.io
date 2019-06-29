@@ -17,7 +17,7 @@ function Macro(props) {
                     {/* {props.tech[0]} */}
                     <p className="tech-tags">
                         {props.tech.map(tech => {
-                            return <Tech key={tech.name} src={tech.logo} alt={tech.name} title={tech.name} />
+                            return <Tech theme={props.theme} key={tech.name} logo={tech.logo} alt={tech.name} title={tech.name} />
                         })}
                     </p>
 

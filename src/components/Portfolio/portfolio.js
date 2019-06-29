@@ -35,7 +35,7 @@ class Portfolio extends Component {
 
                     {this.props.projects.map(project => {
                         return (
-                            <Macro key={project.id} project={project} id={project.id} name={project.name} summary={project.summary}  tech={project.tech} type={project.type} img={project.img} subtitle={project.subtitle} role={project.role} />
+                            <Macro theme={this.props.theme} key={project.id} project={project} id={project.id} name={project.name} summary={project.summary}  tech={project.tech} type={project.type} img={project.img} subtitle={project.subtitle} role={project.role} />
                         )
                     })}
                 </div>

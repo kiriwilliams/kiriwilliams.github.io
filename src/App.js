@@ -22,43 +22,73 @@ const firebase = {
 };
 const javascript = {
   name: "javascript",
-  logo: "./img/javascript.png"
+  logo: [
+    "devicon-javascript-plain",
+    "devicon-javascript-plain colored"
+  ]
 };
 const bootstrap = {
   name: "bootstrap",
-  logo: "./img/bootstrap.png"
+  logo: [
+    "devicon-bootstrap-plain",
+    "devicon-bootstrap-plain colored"
+  ]
 };
 const mongoDB = {
   name: "mongoDB",
-  logo: "./img/mongo.png"
+  logo: [
+    "devicon-mongodb-plain",
+    "devicon-mongodb-plain colored"
+  ]
 };
 const SQL = {
-  name: "SQL",
-  logo: "./img/mysql.svg"
+  name: "MySQL",
+  logo: [
+    "devicon-mysql-plain",
+    "devicon-mysql-plain colored"
+  ]
 };
 const react = {
   name: "react",
-  logo: "./img/react.png"
+  logo: [
+    "devicon-react-original",
+    "devicon-react-original colored"
+  ]
 };
 const heroku = {
   name: "heroku",
-  logo: "./img/heroku.png"
+  logo: [
+    "devicon-heroku-plain",
+    "devicon-heroku-plain colored"
+  ]
 };
 const express = {
   name: "express",
-  logo: "./img/express.png"
+  logo: [
+    "devicon-express-original",
+    "devicon-express-original colored"
+  ]
 }
 const node = {
   name: "node",
-  logo: "./img/node.png"
+  logo: [
+    "devicon-nodejs-plain",
+    "devicon-nodejs-plain colored"
+  ]
 }
 const html = {
   name: "html",
-  logo: "./img/html.png"
+  logo: [
+    "devicon-html5-plain-wordmark",
+    "devicon-html5-plain-wordmark colored"
+  ]
 }
 const css = {
   name: "css",
-  logo: "./img/css.png"
+  logo: [
+    "devicon-css3-plain-wordmark",
+    "devicon-css3-plain-wordmark colored"
+  ]
 }
 
 const projects = [
@@ -173,7 +203,8 @@ class App extends Component {
   state = {
     smallScreen: false,
     menuOpen: true,
-    focusedProject: ""
+    focusedProject: "",
+    theme: "light"
   }
 
    componentDidMount = () => {
@@ -218,7 +249,7 @@ class App extends Component {
         <Nav menuOpen={this.state.menuOpen} />
         
         <main>
-          <Portfolio projects={projects} selectProject={this.selectProject} focusedProject={this.state.focusedProject} />
+          <Portfolio theme={this.state.theme} projects={projects} selectProject={this.selectProject} focusedProject={this.state.focusedProject} />
         </main>
       </div>
     )
