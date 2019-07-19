@@ -1,0 +1,90 @@
+*{
+    z-index: 0;
+}
+a{
+    color: #373738;
+}
+a:visited{
+    color: #373738;
+}
+body{
+    color: #373738;
+    background-color: #f0f0f0;
+}
+
+h3{
+    color: #565656;
+}
+
+header, nav {
+    background-color: #ceeced;
+    color: #386263;
+}
+button{
+    border: 2px solid #fff;
+}
+
+.ylw-btn{
+    background-color: #f5e942;
+    color: #000;
+    border: 2px solid #000;
+    font-weight: bold;
+}
+.ylw-btn a{
+    color: #000;
+}
+.ylw-btn a:active{
+    color: #fff;
+}
+.menu-toggle{
+    background-color: #ceeced;
+    color: #386263;
+}
+.menu-btn{
+    display: block;
+    height: 100%;
+    font-family: inherit;
+    /* background: none;
+    border: none; */
+    padding: 0.2em 0.3em 0;
+    pointer-events: auto;
+    height: 2em;
+    margin: 0.2em;
+}
+.menu-btn:hover, .menu-btn:hover ~ .menu-btn-highlight,.menu-btn:hover a{
+    background-color: #8ca7a8;  
+    color: #fff;
+}
+.demo-btn{
+    background-color: #8ecf6b;
+}
+.code-btn{
+    background-color: #adcdff;
+}
+.thumb-overlay{
+    background-color: #fff;
+}
+.opacity-low{
+    opacity: 0.2;
+}
+.opacity-full{
+    opacity: 1;
+}
+.card{
+    background: #fff;
+}
+
+#menu-toggle:hover{
+    background-color: #faf05f;
+    /* background-image: linear-gradient(#4c4c4c, #4c4c4c, #2d2d2d); */
+}
+#menu-toggle:active{
+    color: #fff;
+    /* background-image: linear-gradient(#2d2d2d, #2d2d2d, #4c4c4c); */
+}
+@media screen and (max-width: 640px){
+    #menu {
+        color: #fff;
+        background-color: #bfddde;    
+    }
+}
